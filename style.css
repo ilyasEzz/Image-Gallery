@@ -1,0 +1,46 @@
+/* BEST WAY TO CENTER AN ELEMENT */
+body, html {
+    
+    height: 100%;
+    display: grid;
+    margin: 0;
+    padding: 0;
+}/*   + "margin: auto" the element */
+
+body{
+    padding: 0;
+    background-color: #333;
+}
+
+#container{
+    max-width: 800px;
+    margin: auto; /*  <=     */
+    border: white solid 5px;
+    background-color: white;
+}
+
+.main-img img, .imgs img {
+    max-width: 100%;
+
+}
+
+.imgs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    cursor: pointer;
+} 
+
+
+/* Fade in Animation */
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+}
